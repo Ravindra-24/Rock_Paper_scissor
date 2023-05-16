@@ -1,20 +1,20 @@
-body{
+body {
     margin: 0px;
 }
 
-.game{
+.game {
     height: 100vh;
     width: 100%;
-    background-color:#dd3758;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+    background-color: #dd3758;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.game .scoreboard{
+.game .scoreboard {
     display: flex;
-    background-color: cornflowerblue ;
+    background-color: cornflowerblue;
     width: 150px;
     height: 80px;
     justify-content: center;
@@ -23,7 +23,8 @@ body{
     box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
 }
 
-.player,.computer{
+.player,
+.computer {
     position: relative;
     width: 120px;
     display: flex;
@@ -32,7 +33,7 @@ body{
     opacity: 0.8;
 }
 
-.scoreboard .player h2{
+.scoreboard .player h2 {
     position: absolute;
     width: 100px;
     left: -90px;
@@ -40,16 +41,16 @@ body{
     display: flex;
     justify-content: center;
     padding: 5px;
-    border-radius:10px ;
+    border-radius: 10px;
 }
 
-.scoreboard .border{
+.scoreboard .border {
     position: absolute;
     border: 5px solid #dd3758;
     height: 110px;
 }
 
-.scoreboard .computer h2{
+.scoreboard .computer h2 {
     position: absolute;
     right: -90px;
     width: 100px;
@@ -57,10 +58,10 @@ body{
     justify-content: center;
     background-color: rgb(87, 65, 26);
     padding: 5px;
-    border-radius:10px ;
+    border-radius: 10px;
 }
 
-.options{
+.options {
     width: 400px;
     display: flex;
     justify-content: space-between;
@@ -77,27 +78,26 @@ body{
     transition: 0.1s ease-in-out;
 }
 
-.option:hover{
+.option:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
- #scissor{
+#scissor {
     transform: rotateY(180deg);
 }
 
-#rock{
+#rock {
     transform: rotate(90deg);
 }
 
-.option img{
+.option img {
     width: 100%;
 }
 
-.win{
+.win {
     border: 5px solid #00ff00 !important;
 }
 
-.lose{
+.lose {
     border: 5px solid #f80000 !important;
 }
-
