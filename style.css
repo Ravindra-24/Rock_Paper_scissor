@@ -4,6 +4,7 @@ body{
 
 .game{
     height: 100vh;
+    width: 100%;
     background-color:#dd3758;
    display: flex;
    flex-direction: column;
