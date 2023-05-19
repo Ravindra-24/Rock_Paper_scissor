@@ -30,7 +30,7 @@ const game = (option) => {
           messageBox.style = "color: #7c1515";
           break;
         case 1:
-          messageBox.innerHTML = "Rock Beats Paper, Computer Win !!";
+          messageBox.innerHTML = `${paper.innerHTML} beats ${rock.innerHTML}, Computer Win...!!!`;
           rock.classList.add("lose");
           setTimeout(() => {
             rock.classList.remove("lose");
@@ -40,7 +40,7 @@ const game = (option) => {
           computerScore.innerHTML = computerScoreContainer;
           break;
         case 2:
-          messageBox.innerHTML = "Rock Beats Scissors, Player Win !!";
+          messageBox.innerHTML = `${rock.innerHTML} beats ${scissor.innerHTML}, Player Win...!!!`;
           rock.classList.add("win");
           setTimeout(() => {
             rock.classList.remove("win");
@@ -56,7 +56,7 @@ const game = (option) => {
     case 1:
       switch (computerChoice) {
         case 0:
-          messageBox.innerHTML = "Paper beats rock, Player Win !!";
+          messageBox.innerHTML =`${paper.innerHTML} beats ${rock.innerHTML}, Player Win...!`;
           paper.classList.add("win");
           setTimeout(() => {
             paper.classList.remove("win");
@@ -70,7 +70,7 @@ const game = (option) => {
           messageBox.style = "color: #7c1515";
           break;
         case 2:
-          messageBox.innerHTML = "Scissors beats paper, Computer Win !!";
+          messageBox.innerHTML =`${scissor.innerHTML} beats ${paper.innerHTML}, Computer Win...!`;
           paper.classList.add("lose");
           setTimeout(() => {
             paper.classList.remove("lose");
@@ -86,7 +86,7 @@ const game = (option) => {
     case 2:
       switch (computerChoice) {
         case 0:
-          messageBox.innerHTML = "Scissors beats rock, Computer Win !!";
+          messageBox.innerHTML =`${rock.innerHTML} beats ${scissor.innerHTML}, Computer Win...!`;
           scissor.classList.add("lose");
           setTimeout(() => {
             scissor.classList.remove("lose");
@@ -96,7 +96,7 @@ const game = (option) => {
           computerScore.innerHTML = computerScoreContainer;
           break;
         case 1:
-          messageBox.innerHTML = "Scissors beats paper, Player Win !!";
+          messageBox.innerHTML =`${scissor.innerHTML} beats ${paper.innerHTML}, Player Win...!`;
           scissor.classList.add("win");
           setTimeout(() => {
             scissor.classList.remove("win");

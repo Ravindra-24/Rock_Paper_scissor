@@ -106,3 +106,23 @@ body {
 .lose {
   border: 5px solid #f80000 !important;
 }
+
+.text{
+  margin: 50px;
+  display: flex;
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+
+.message-box img{
+  width: 50px;
+  height: 50px;
+  display: inline;
+
+}
+
+@media screen and (max-width:650px) {
+  .text{
+    font-size: 1rem;
+  }
+}
